@@ -46,7 +46,7 @@ class ActiveDataProvider extends \yii\data\ActiveDataProvider
         if (is_callable([$query, 'select'])) {
             $query->select(new Expression('1'));
         }
-        $query->limit($limit);
+        $query->limit($limit)->offset(-1)->orderBy([]);
         $countQuery = new Query();
         $countQuery->select('COUNT(*)')->from(['stesi_count_query' => $query]);
         return (int) $countQuery->createCommand($this->db)->queryScalar();
