@@ -1,0 +1,21 @@
+{
+  "name": "stesi/yii2-fast-pagination",
+  "description": "Pagination optimization",
+  "type": "package",
+  "minimum-stability": "dev",
+  "keywords": ["yii2","extension","pagination"],
+  "authors": [
+    {
+      "name": "STeSI",
+      "email": "info@stesi.srl"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "2.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "stesi\\fastpagination\\": "src"
+    }
+  }
+}
