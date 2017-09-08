@@ -44,7 +44,7 @@ class ActiveDataProvider extends \yii\data\ActiveDataProvider
 
         $query = clone $this->query;
         if (is_callable([$query, 'select'])) {
-            $query->select(new Expression('1'));
+            $query->select(new Expression('1 as test_field'));
         }
         $query->limit($limit)->offset(-1)->orderBy([]);
         $countQuery = new Query();
