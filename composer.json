@@ -1,7 +1,7 @@
 {
   "name": "stesi/yii2-fast-pagination",
   "description": "Pagination optimization",
-  "type": "package",
+  "type": "drupal-module",
   "minimum-stability": "dev",
   "keywords": ["yii2","extension","pagination"],
   "authors": [
